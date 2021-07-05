@@ -1,0 +1,29 @@
+<! DOCTYPE html>
+<html>
+
+<body>
+    <form method="GET" action="Exe1.php">
+            <div>
+                Entre com um valor para saber se é + ou - e par ou ímpar
+                <input type="text" name="num" value="0" />
+                <button type="submit">Verificar</button>
+            </div>
+</form>
+<?php
+        $n = $_GET['num'];
+        if($n < 0) {
+            echo  $n . ' O número informado é negativo' . '<br>';
+        }
+        else
+            echo $n . ' O número informado é positivo' . '<br>';
+        }
+        $p = $n / 2;
+        if($p = 0) {
+            echo $n . ' O número informado é par' . '<br>';
+        }
+        else {
+            echo $n . ' O número informado é ímpar' . '<br>';
+        }
+?>
+</body>
+</html>
